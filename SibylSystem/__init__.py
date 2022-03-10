@@ -33,7 +33,7 @@ class PsychoPass:
         if not host.endswith("/"):
             host += "/"
         if not host.startswith("http"):
-            host = "http://" + host
+            host = f"http://{host}"
         self.host = host
         self.token = token
         self.client = client
